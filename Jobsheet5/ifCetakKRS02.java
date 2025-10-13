@@ -13,6 +13,7 @@ public class ifCetakKRS02 {
                 ? "KRS dapat dicetak. \nsilahkan cetak KRS dan minta tanda tangan DPA"
                 : "Registrasi ditolak. Silakan lunasi UKT terlebih dahulu.";
         System.out.println(pesan);
+        sc.close();
     }
     
 }
