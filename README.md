@@ -2,3 +2,4 @@
 ### nama        : Ahmad Rizal Ali Pasha
 ### absen/kelas : 02/1C
 ### nim         : 254107020146
+#### halo rek
