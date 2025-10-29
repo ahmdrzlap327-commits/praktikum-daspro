@@ -53,6 +53,7 @@ sedangkan inner loop Bertugas untuk mengeksekusi perintah di dalam satu baris (p
 **4. Mengapa perlu System.out.println();? Apa akibatnya jika dihilangkan?** 
 Perintah sout ini berfungsi untuk pindah baris (memberi newline ) setelah inner loop selesai mencetak satu baris penuh. 
 Jika Dihilangkan maka semua bintang akan dicetak dalam satu baris tunggal yang sangat panjang 
+
 ---
 
 ## Percobaan 2.3: Bintang Segitiga 
