@@ -4,6 +4,7 @@ public class tugas1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        //memasukkan banyaknya nilai mahasiswa yang akan diinput
         System.out.print("Masukan jumlah mahasiswa: ");
         int jml = sc.nextInt();
 
@@ -11,6 +12,7 @@ public class tugas1 {
         int nilaiTotal = 0, tertinggi = 0, terendah = 100;
         double rata2;
 
+        //memasukkan setiap nilai mahasiswa
         for (int i = 0; i < nilaiMhs.length; i++) {
             System.out.print("Masukan nilai mahasiswa ke-" + ((i)+1) + ": ");
             nilaiMhs [i] = sc.nextInt();
@@ -22,16 +24,17 @@ public class tugas1 {
                 }  
         }
 
-        rata2 = nilaiTotal / nilaiMhs.length;
+        rata2 = nilaiTotal / nilaiMhs.length; //menghitung nilai rata-rata
         System.out.println();
 
+        //menampilkan semua nilai yang telah dimasukkan
         for (int i = 0; i < nilaiMhs.length; i++) {
             System.out.println("Nilai mahasiswa ke-" + ((i)+1) + " adalah " + nilaiMhs[i]);
         }
 
         System.out.println();
         System.out.println("Rata-rata nilai mahasiswa adalah " + rata2);
-        System.out.println("Dengan nilai tertinggi yang diperoleh: " + tertinggi);
-        System.out.println("Dan nilai terendah yang diperoleh: " + terendah);
+        System.out.println("Dengan nilai tertinggi yang diperoleh: " + tertinggi); //menampilkan nilai tertinggi 
+        System.out.println("Dan nilai terendah yang diperoleh: " + terendah); //menampilkan nilai terendah
     }
 }
