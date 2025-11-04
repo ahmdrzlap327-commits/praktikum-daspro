@@ -3,8 +3,15 @@ import java.util.Scanner;
 public class searchNilai02 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int [] arrNilai = {80, 85, 78, 96, 90, 82, 86};
-        int key = 90;
+        System.out.print("Masukan banyaknya nilai yang akan diinput: ");
+        int n = sc.nextInt();
+        int [] arrNilai = new int [n];
+        for (int i = 0; i < arrNilai.length; i++) {
+            System.out.print("Masukan nilai mahasiswa ke-" + i + ": ");
+            arrNilai [i] = sc.nextInt();
+        }
+        System.out.print("Masukan nilai yang ingin dicari: ");
+        int key = sc.nextInt();
         int hasil = 0;
 
         for (int i = 0; i < arrNilai.length; i++) {
@@ -13,8 +20,13 @@ public class searchNilai02 {
                 break;
             }
         }
-        System.out.println();
-        System.out.println("Nilai " + key + " ketemu di indeks ke-" + hasil);
-        System.out.println();
+        if (key == hasil) {
+            System.out.println("Nilai " + key + " ketemu di indeks ke-" + hasil);
+        } else {
+            System.out.println("Nilai yang dicari tidak ditemukan");
+        }
+        // System.out.println();
+        // System.out.println("Nilai " + key + " ketemu di indeks ke-" + hasil);
+        // System.out.println();
     }
 }
