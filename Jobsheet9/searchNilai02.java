@@ -20,13 +20,10 @@ public class searchNilai02 {
                 break;
             }
         }
-        if (key == hasil) {
-            System.out.println("Nilai " + key + " ketemu di indeks ke-" + hasil);
+        if (hasil != -1) {
+            System.out.println("Nilai " + key + " ketemu, merupakan nilai mahasiswa ke-" + (hasil + 1)); 
         } else {
-            System.out.println("Nilai yang dicari tidak ditemukan");
+             System.out.println("Nilai yang dicari tidak ditemukan"); 
         }
-        // System.out.println();
-        // System.out.println("Nilai " + key + " ketemu di indeks ke-" + hasil);
-        // System.out.println();
     }
 }
