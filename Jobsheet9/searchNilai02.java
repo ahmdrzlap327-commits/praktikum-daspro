@@ -7,7 +7,7 @@ public class searchNilai02 {
         int n = sc.nextInt();
         int [] arrNilai = new int [n];
         for (int i = 0; i < arrNilai.length; i++) {
-            System.out.print("Masukan nilai mahasiswa ke-" + i + ": ");
+            System.out.print("Masukan nilai mahasiswa ke-" + ((i)+1) + ": ");
             arrNilai [i] = sc.nextInt();
         }
         System.out.print("Masukan nilai yang ingin dicari: ");
