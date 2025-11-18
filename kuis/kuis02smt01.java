@@ -68,8 +68,7 @@ public class kuis02smt01 {
 
         //total kontribusi dari setiap daerah
         for (int i = 0; i < tabel.length; i++) {
-            for (int j = 0; j < tabel.length; j++) {
-                
+            for (int j = 0; j < tabel.length; j++) {   
             }
         }
         System.out.println("Dengan bantuan ");
