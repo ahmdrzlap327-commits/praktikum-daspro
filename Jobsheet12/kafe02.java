@@ -33,9 +33,11 @@ public class kafe02 {
         double diskon;        
         if (kodeDiskon.equals("DISKON30")) {
             System.out.println("Selamat anda mendapatkan diskon sebesar 30%!");
+            System.out.println("Diskon sebesar: " + (hargaItem[pilihanMenu-1] * banyakItem * 0.3));
             diskon = 0.7;
         } else if (kodeDiskon.equals("DISKON50")) {
             System.out.println("Selamat anda mendapatkan diskon sebesar 50%!");
+            System.out.println("Diskon sebesar: " + (hargaItem[pilihanMenu-1] * banyakItem * 0.5));
             diskon = 0.5;
         } else {
             System.out.println("Kode yang anda input invalid!");
