@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class pengunjungCafe02 {
     static void daftarPengunjung (String...namaPengunjung){
         System.out.println("Daftar nama pengunjung: ");
-        for (int i = 0; i < namaPengunjung.length; i++) {
-            System.out.println("- " + namaPengunjung[i]);
+        for (String listNama : namaPengunjung) {
+            System.out.println("- " + listNama);
         }
     }
 
