@@ -25,7 +25,25 @@ public class kafe02 {
         System.out.println("===========================");
         System.out.println("Silahkan pilih menu yang anda inginkan: ");
     }
+
+    public static int hitungTotalHarga (int pilihanMenu, int banyakItem){
+        int hargaItem [] = {15000, 20000, 22000, 12000, 10000, 18000};
+
+        int hargaTotal = hargaItem[pilihanMenu-1] * banyakItem; 
+        return hargaTotal;  
+    }
+
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         menu("Budi", true, "DISKON30");
+
+        System.out.print("\nMasukan nomor menu yang ingin anda pesan: ");
+        int pilihanMenu = sc.nextInt();
+        System.out.print("Masukan jumlah item yang ingin dipesan: ");
+        int banyakItem = sc.nextInt();
+
+        int hargaTotal = hitungTotalHarga(pilihanMenu, banyakItem);
+
+        System.out.println("Total harga untuk pesanan anda: Rp. " + hargaTotal);
     }
 }
