@@ -26,6 +26,6 @@ public class kafe02 {
         System.out.println("Silahkan pilih menu yang anda inginkan: ");
     }
     public static void main(String[] args) {
-        menu("Andi", true, "DISKON50");
+        menu("Budi", true, "DISKON30");
     }
 }
