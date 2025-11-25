@@ -50,18 +50,31 @@ public class kafe02 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        menu();
+        int totalKeseluruhan = 0;
+        boolean pesanLagi = true;
+        while (pesanLagi) {
+            menu();
+            
+            System.out.print("\nMasukan nomor menu yang ingin anda pesan: ");
+            int pilihanMenu = sc.nextInt();
+            System.out.print("Masukan jumlah item yang ingin dipesan: ");
+            int banyakItem = sc.nextInt();
+            sc.nextLine();
+            System.out.print("Masukan kode diskon nya: ");
+            String kode = sc.nextLine();
 
-        System.out.print("\nMasukan nomor menu yang ingin anda pesan: ");
-        int pilihanMenu = sc.nextInt();
-        System.out.print("Masukan jumlah item yang ingin dipesan: ");
-        int banyakItem = sc.nextInt();
-        sc.nextLine();
-        System.out.print("Masukan kode diskon nya: ");
-        String kode = sc.nextLine();
+            double hargaTotal = hitungTotalHarga(pilihanMenu, banyakItem, kode);
+            totalKeseluruhan += hargaTotal;
+            System.out.printf("Harga untuk pesanan ini adalah: %.2f%n", hargaTotal);
 
-        double hargaTotal = hitungTotalHarga(pilihanMenu, banyakItem, kode);
+            System.out.print("Apakah anda ingin memesan menu yang lain? (y/n)");
+            String ulang = sc.nextLine();
+            if (ulang.equalsIgnoreCase("n")) {
+                pesanLagi = false;
+            }
+        }
+        System.out.println("Total harga untuk pesanan anda: Rp. " + totalKeseluruhan);
 
-        System.out.println("Total harga untuk pesanan anda: Rp. " + hargaTotal);
+       
     }
 }
