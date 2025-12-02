@@ -6,7 +6,7 @@ public class percobaan2 {
             System.out.print("1 = ");
             return (1);  
         } else {
-            System.out.println(x + "x");
+            System.out.print(x + "x");
             return (x * hitungPangkat(x, y-1));
         }    
     }  
